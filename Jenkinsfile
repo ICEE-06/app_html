@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 echo 'Cloning repository...'
-                https://github.com/ICEE-06/app_html.git
+                git url: 'https://github.com/ICEE-06/app_html.git', branch: 'main'
             }
         }
         stage('Build') {
