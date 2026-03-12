@@ -24,5 +24,12 @@ pipeline {
                 '''
             }
         }
+        
+        stage('Debug files') {
+            steps {
+            sh 'ls -R'
+            }
+        }   
     }
 }
+
