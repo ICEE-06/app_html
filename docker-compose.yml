@@ -3,7 +3,8 @@ version: '3.8'
 services:
 
   web:
-    image: apache:latest
+    build: .
+    #image: apache:latest
     container_name: ci_cd_web
     ports:
       - "8080:80"
