@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'docker build -t apache .'
+                sh 'docker build --no-cache -t apache .'
             }
         }
     
